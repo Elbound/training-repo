@@ -1,0 +1,69 @@
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#header-nav{
+    text-align: center;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+footer{
+    background-color: lightgray;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    height: auto;
+    align-content: middle;
+}
+
+/*story*/
+.story-link{
+    color: blue;
+}
+
+#story-content{
+    align-self: center;
+    max-width: 500px;
+    /* border: 2px solid black; */
+    padding: 10px;
+    margin: 0 auto;
+    text-align: justify;
+    align-content: center;
+    
+}
+
+#story-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.story-op-ed{
+    text-align: center;
+    font-style: italic;
+    color: gray;
+}
+
+/*about*/
+.about-section{
+    max-width: 600px;
+    margin: 16px auto;    
+    padding: 10px;
+    
+}
+.about-section h2{
+    text-align: center;
+}
+
+.about-section ul,.about-section ol {
+    margin: 8px 0 0 20px;
+}
