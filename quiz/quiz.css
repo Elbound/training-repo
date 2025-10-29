@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    
+}
+
+header h2{
+    margin: auto 0;
+    margin-left: 15%;
+    color: gold;
+    font-weight: bold;
+}
+
+#header-nav{
+    text-align: center;
+    background-color: lightgray;
+    /* padding: 10px; */
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    /* text-decoration: none; */
+}
+nav ul li{
+
+    background-color: black;
+}
+
+nav ul li a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* main */
+body{
+    /* margin: 0 0;
+    width: 100%;
+    height: 100%; */
+    background-color: aquamarine;
+}
+
+main{
+    margin: 0 auto;
+    height: 100vh;
+    max-width: 50%;
+    background-color: rgb(20, 66, 126);
+    box-shadow: 0 8px 8px black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main h2{
+    text-align: center;
+    padding: 20px;
+    color: aqua;
+    
+}
+
+/* quizz layout 1 - start*/
+#scene-quiz-start{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    max-width: 100%;
+    min-height: 400px;
+    padding-top: 200px;
+
+    /* background-color: aliceblue; */
+    
+    
+}#scene-quiz-start p{
+    /* font-size: 40px; */
+    color: rgb(0, 206, 206);
+}
+#scene-quiz-start h3{
+    font-size: 40px;
+    color: aqua;
+}
+
+
+.quiz-start, #quiz-quit{
+    background-color: aquamarine;
+    
+    border-radius: 8px;
+    font-size: 30px;
+    padding: 5px 20px;
+    width: fit-content;
+    margin: auto auto;
+}
+.quiz-start:hover, #quiz-quit:hover{
+    background-color: rgb(20, 66, 126);
+    color: aquamarine;
+    cursor: pointer;
+}
+
+/* quizz layout 2 - in session */
+#scene-quiz-qna{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    /* padding-top: 20px; */
+    /* background-color: white; */
+
+}
+#quiz-detail{
+    display: flex;
+    justify-content: space-between;
+
+    width: 75%;
+    margin-top: 200px;
+    font-size: 20px;
+    color: aqua;
+}
+
+#question-box{
+    margin-bottom: 20px;
+    width: 75%;
+    min-height: 100px;
+    padding: 5px;
+    border-radius: 8px;
+
+    font-size: 20px;
+    background-color: bisque;
+    color: black;
+}
+
+#quiz-pg{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    max-width: 75%;
+    /* justify-content: space-between; */
+    /* gap: 30px; */
+    gap: 40px;
+    
+}
+
+.quiz-answer{
+    /* margin: auto 0; */
+    display: flex;
+    background-color: bisque;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    gap: 5px;
+}
+
+.quiz-answer:hover{
+    background-color: rgb(20, 66, 126);
+    color: bisque;
+    /* font-size: 25px; */
+    cursor: pointer;
+}
+
+.quiz-answer:checked{
+    background-color: rgb(20, 66, 126);
+    color: bisque; 
+}
+
+#quiz-next{
+    background-color: bisque;
+    padding: 10px;
+    border-radius: 8px;
+
+    text-align: center;
+    gap: 5px;
+}
+#quiz-next:hover{
+    background-color: rgb(20, 66, 126);
+    color: bisque; 
+}
+#quiz-next:active{
+    background-color: rgb(10, 35, 67);
+    color: white; 
+}
+
+/* quizz layout 3 - end screen */
+#scene-quiz-over{
+    
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    max-width: 100%;
+    min-height: 400px;
+    padding-top: 200px;
+
+    /* background-color: aliceblue; */
+    
+    
+}
+
+#scene-quiz-over p{
+    font-size: 35px;
+    color: rgb(0, 206, 206);
+}
+#scene-quiz-over h3{
+    font-size: 40px;
+    color: aqua;
+}
+
+#quiz-over-option{
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}

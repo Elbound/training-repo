@@ -5,46 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY Protfolio?</title>
     <link rel="stylesheet" href="style.css">
+    <script src="ttt.js" defer></script>
 </head>
 <body>
     
-    <header>
-        <h1>Hello werld!</h1>
+     <header>
+        <h1 id="troll-spin">Hello werld!</h1>
         <nav id="header-nav">
-            <a href="index.html">Home</a> |
-            <a href="about.html">About Me</a> |
-            <a href="#end">Contact</a>
+            <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="about.html">About Me</a> </li>
+                <li><a href="modul4-latihan.html">Latihan flex</a> </li>
+                <li><a href="#end">Contact</a> </li>
+            </ul>
         </nav>
     </header>
-    <div style="background-color: antiquewhite; align-self: center;">
-        <h2>Welcome to a random story telling</h2>
-        <br>
-        <p>
-            i dunnot what to write :w
-            but i will tell you a story
-            random story totally not from ai
-        </p>
+    <main>
+        <div id="home-block">
+            <h2>Welcome to a random story telling</h2>
+            <br>
+            <p>
+                i dunnot what to write :w
+                but i will tell you a story
+                random story totally not from ai
+            </p>
+            
+            <b>Pick your story:</b>
+            <ul>
+                <li>
+                    <a href="birb.html" class="story-link">
+                        <b>Bird Story</b> —
+                        <em>This is a birb, a very cool animal</em>
+                    </a>    
+                </li>
+                <li>
+                    <a href="birb2.html" class="story-link">
+                        <b>Bird Story 2</b> —
+                        <em>This is a diferent birb, a cooler one</em>
+                    </a>    
+                </li>
+                <li>
+                    <div id="troll">
+                        <b>Totally a bird story</b> —
+                        <em>This birb</em>
+                    </div>  
+                </li>
+            </ul>
+
+            <div>
+                Test you birb knowledge on our trivia page <a id="quiz-link" href="quiz/quiz.html" b>here!</a>
+            </div>
+            
+        </div>
+
+        <dialog id="rick-roll">
+            <iframe id="yt-Iframe" width="560" height="315" src="https://www.youtube.com/embed/fC7oUOUEEi4?si=mY7cHHAmLxNBEfUE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <!-- <div class="tenor-gif-embed" data-postid="25246988" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/very-importatn-gif-25246988">Very Importatn GIF</a>from <a href="https://tenor.com/search/very+importatn-gifs">Very Importatn GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script> -->
+            <!-- <div class="tenor-gif-embed" data-postid="22954713" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/rickroll-roll-rick-never-gonna-give-you-up-never-gonna-gif-22954713">Rickroll Never Gonna Give You Up GIF</a>from <a href="https://tenor.com/search/rickroll-gifs">Rickroll GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script> -->
+            <button onclick="closeDialogue()" id="rick-roll-but">close</button>
+        </dialog>
+
+
+        <div id="ttt-block">
+            <button id="ttt-reset-btn">Reset Game</button>
+            <div id="ttt-grid">
+                <card id="cell-1" class="ttt-cell"></card>
+                <card id="cell-2" class="ttt-cell"></card>  
+                <card id="cell-3" class="ttt-cell"></card>
+                <card id="cell-4" class="ttt-cell"></card>
+                <card id="cell-5" class="ttt-cell"></card>
+                <card id="cell-6" class="ttt-cell"></card>
+                <card id="cell-7" class="ttt-cell"></card>
+                <card id="cell-8" class="ttt-cell"></card>
+                <card id="cell-9" class="ttt-cell"></card>
+            </div>
+            
+        </div>
         
-        <b>Pick your story:</b>
-        <ul>
-            <li>
-                <a href="birb.html" class="story-link">
-                    <b>Bird Story</b> —
-                    <em>This is a birb, a very cool animal</em>
-                </a>    
-            </li>
-            <li>
-                <a href="birb2.html" class="story-link">
-                    <b>Bird Story 2</b> —
-                    <em>This is a diferent birb, a cooler one</em>
-                </a>    
-            </li>
-             <li>
-                Not Bird Story (WIP)
-            </li>
-        </ul>
-        
-    </div>
+        <dialog id="troll-move">
+            bird
+            <img width="50px" src="birb.html" alt="birbimg">
+        </dialog>
+    </main>
     <footer id="end">
         <nav>
             © 2025 Theofilus GMS |

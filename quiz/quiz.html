@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <script src="quiz.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Hello werld!</h1>
+        <h2>Quizzz</h2>
+        <nav id="header-nav">
+            <ul>
+                <li><a href="/index.html">Home</a> </li>
+                <li><a href="/about.html">About Me</a> </li>
+                <li><a href="/modul4-latihan.html">Latihan flex</a> </li>
+                <li><a href="#end">Contact</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- <h2>THE QUIZZZ</h2> -->
+        <div id="scene-quiz-start">
+            <h3>BIRD QUIZ</h3>
+            <p>
+                This is a Bird Trivia Quiz. Test your knowledge about bird and win the highest score!!!!
+            </p>
+            <card class="quiz-start">
+                START
+            </card>
+        </div>
+
+        <div id="scene-quiz-qna">
+            <div id="quiz-detail">
+                <h3 id="quiz-level">Question number: x</h3>
+                <p id="quiz-time"> 10:00</p>
+            </div>
+            
+            <card id="question-box">
+                Question box
+            </card>
+            <div id="quiz-pg">
+                
+                <label class="quiz-answer">
+                    <input type="radio" name="answer" value="A">
+                    <span class="quiz-answer-text">A | Answer number one</span>
+                </label>
+                <label class="quiz-answer">
+                    <input type="radio" name="answer" value="B">
+                    <span class="quiz-answer-text">B | Answer number one</span>
+                </label>
+                <label class="quiz-answer">
+                    <input type="radio" name="answer" value="C">
+                    <span class="quiz-answer-text">C | Answer number one</span>
+                </label>
+                <label class="quiz-answer">
+                    <input type="radio" name="answer" value="D">
+                    <span class="quiz-answer-text">D | Answer number one</span>
+                </label>
+            </div>
+            <button id="quiz-next" type="submit">Next</button>
+
+        </div>
+
+        <div id="scene-quiz-over">
+            <h3>BIRD QUIZ</h3>
+            <p id="correct-score">
+                X/5
+            </p>
+            <p>
+                SCORE: <strong id="final-score"></strong>
+            </p>
+            <div id="quiz-over-option">
+            <card class="quiz-start">RESTART</card>
+            <card id="quiz-quit">GO HOME</card>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

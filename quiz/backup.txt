@@ -1,0 +1,122 @@
+<h2 id="quiz-h2">Welcome to da Quiz</h2>
+
+        <div class="parent">
+            <div class="div1">
+                <p id="quiz-question">Question qustion question question</p>
+                <div id="quiz-input">
+                    <label class="mc-label">
+                        A
+                        <input type="radio" name="tes-input" id="option-a">
+                        <p class="mc-answer">answer 1</p>
+                    </label>
+                    <label class="mc-label">
+                        B
+                        <input type="radio" name="tes-input" id="option-b">
+                        <p class="mc-answer">answer 2</p>
+                    </label>
+                    <label class="mc-label">
+                        C
+                        <input type="radio" name="tes-input" id="option-c">
+                        <p class="mc-answer">answer 2</p>
+                    </label>
+                    <label class="mc-label">
+                        D
+                        <input type="radio" name="tes-input" id="option-d">
+                        <p class="mc-answer">answer 2</p>
+                    </label>
+                    <button type="submit">Select</button>
+                </div>
+            </div>
+            <div class="div2">
+                2
+            </div>
+            <div class="div3">
+                3
+            </div>
+        </div>
+=============================================================================================
+css:
+
+#quiz-h2{
+    text-align: center;
+    margin: 10px 0;
+
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 100px);
+    gap: 8px;
+
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.parent div{
+    background-color: aqua;
+}
+    
+.div1 {
+    grid-column: span 3 / span 3;
+    grid-row: span 5 / span 5;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 10px;
+    /* max-height:inherit; */
+}
+
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+}
+
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
+        
+/* layout 1 */
+#quiz-question{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: aquamarine;
+    min-width: 50%;
+    min-height: 40%;
+    padding: 10px;
+    text-align: middle;
+}
+#quiz-input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    /* margin-left: 10px; */
+    background-color: aquamarine;
+    max-width: 300px;
+    padding: 5px;
+    /* max-height: 50%; */
+    /* gap: 30px; */
+    
+}
+
+label{
+    padding: 10px;
+}
+
+button{
+    /* display: inline-block; */
+    border: none;
+    border-radius: 8px;
+    max-width: 200px;
+}
+button:active{
+    background-color: black;
+    color: white;
+}
+

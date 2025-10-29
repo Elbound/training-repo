@@ -5,6 +5,10 @@
 }
 
 header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
     background-color: black;
     color: white;
     text-align: center;
@@ -15,7 +19,7 @@ header{
 #header-nav{
     text-align: center;
     background-color: lightgray;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 footer{
@@ -35,6 +39,20 @@ a{
 li{
     height: auto;
     align-content: middle;
+}
+
+/*home*/
+#home-block{
+    background-color: antiquewhite; 
+    /* align-self: center; */
+    max-width: 600px;
+    
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 10px;
+}
+#home-block ul{
+    list-style: none;
 }
 
 /*story*/
@@ -78,4 +96,183 @@ li{
 
 .about-section ul,.about-section ol {
     margin: 8px 0 0 20px;
+}
+
+/* latihan flex */
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    /* gap: 10px; */
+    /* margin: 12px 20px; */
+    text-decoration: none;
+}
+nav ul li{
+
+    background-color: whitesmoke;
+}
+
+nav ul li a{
+    display: block;
+    padding: 15px 20px;
+}
+
+nav a:hover{
+    background-color: black;
+    color: white;
+}
+
+#try-grid{
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto ;
+    gap: 10px;
+
+}
+.grid-item{
+    background-color: lightgray;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+.grid-item div{
+    flex: 0 1 auto;
+    max-height: 100%;
+    align-items: center;
+}
+.grid-item img{
+    max-width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+.grid-item a{
+    min-width: 100px;
+    margin: auto 0;
+    color: blue;
+    font-size: large;
+}
+
+#try-flexing{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+#try-flexing p{
+    background-color: red;
+    font-size: x-large;
+    text-align: center;
+}
+.anak{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* justify-content: space-between; */
+    
+}
+.cucu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.flex-item{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    font-size: x-large;
+    text-align: center;
+}
+
+/* tic tac toe */
+#ttt-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#ttt-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+    width: max-content;
+    background-color: black;
+}
+#ttt-reset-btn{
+    margin: 0 auto;
+}
+.ttt-cell{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    cursor: pointer;
+
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    color: gold;
+}
+
+
+/*roll / easter egg*/
+#rick-roll{
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    margin: auto auto;
+
+    flex: 1 1 auto;
+
+    visibility:hidden;
+    opacity: 0;
+}
+.tenor-gif-embed{
+    width: 200px;
+}
+
+
+#troll{
+    color: purple;
+}
+#troll:hover{
+    cursor: pointer;
+    color: chartreuse;
+}
+
+#troll-spin:hover{
+    color: chartreuse;
+    cursor: pointer;
+}
+
+.spinning{
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#troll-move{
+    
+}
+
+/* quiz */
+#quiz-link{
+    color: blue;
 }
