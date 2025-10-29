@@ -176,9 +176,9 @@ main h2{
     cursor: pointer;
 }
 
-.quiz-answer:checked{
-    background-color: rgb(20, 66, 126);
-    color: bisque; 
+.quiz-answer:has(input:checked) {
+  background-color: rgb(20, 66, 126);
+  color: bisque;
 }
 
 #quiz-next{
@@ -197,6 +197,12 @@ main h2{
     background-color: rgb(10, 35, 67);
     color: white; 
 }
+
+#scene-quiz-qna input{
+    visibility: hidden;
+}
+
+
 
 /* quizz layout 3 - end screen */
 #scene-quiz-over{

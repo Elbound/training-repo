@@ -79,3 +79,9 @@ console.log(spinText)
 spinText.addEventListener('click', function(){
   spinText.classList.toggle('spinning');
 });
+
+const flying = document.getElementById("troll-fly");
+flying.addEventListener('click', ()=>{
+  flying.style.top = Math.random() * 90+ 'vh';
+  flying.style.left = Math.random() * 90 + 'vw';
+});

@@ -185,6 +185,8 @@ document.addEventListener("DOMContentLoaded",function (e){
     //for quiz..
 
     // var chosen;
+
+    // var chosen;
     // var current_question;
     quiz_next_but.addEventListener('click', function(e){
         const select = document.querySelector('input[name="answer"]:checked');
@@ -195,8 +197,8 @@ document.addEventListener("DOMContentLoaded",function (e){
         }
 
         //load next question
-        select.checked = false;
         loadNextQuestion();
+        select.checked = false;
         current_question++;
 
     });
